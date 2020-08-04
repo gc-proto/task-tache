@@ -44,7 +44,7 @@
 	<h1 property="name" id="wb-cont">
 		Get a business number
 	</h1>
-	
+
 	<h2>
 		Business Registration Online
 	</h2>
@@ -116,18 +116,7 @@
 	</div>
 </main>
 
-		<div id="def-preFooter"></div><!-- Write closure template -->
-		<script type="text/javascript">
-		var defPreFooter = document.getElementById("def-preFooter");
-		defPreFooter.outerHTML = wet.builder.preFooter({
-		dateModified: "August 1, 2019",
-		showPostContent: true,
-		showFeedback: true,
-		showShare: true
-		});
-		</script>
-	</div>
-</main>
+
 <div id="def-footer"></div><!-- Write closure template -->
 <script type="text/javascript">
 			var defFooter = document.getElementById("def-footer");
@@ -136,12 +125,12 @@
 				showFeatures: true
 			});
 </script> <!-- Write closure template -->
- 
+
 <script type="text/javascript">
 
 			document.write(wet.builder.refFooter({
 			}));
-</script> 
+</script>
 
 <!-- BEGIN COVID task survey -->
 <aside class="survey hidden-print" id='owInviteSnippet' style="opacity:0;transition:opacity 500ms;-webkit-transition:opacity 500ms;display:none;">
@@ -155,15 +144,24 @@
 	<p>Choosing “Yes, after my visit” will open a new window that you can return to once you complete your visit to Canada.ca.</p>
 		<ul class="list-inline mrgn-bttm-0">
 						<li class="mrgn-tp-md">
-										<a id="survey-yes" class="btn btn-primary" href="http://test.canada.ca/task-tache/covid/task-success-en.html" target="_blank" style='text-decoration: none;'><b>Yes, after my visit</b><span class="wb-inv">.</span></a>
+										<a id="survey-yes" class="btn btn-primary" href="http://test.canada.ca/task-tache/covid/task-success-en.html" target="_blank" style='text-decoration: none;'>
+											<b>Yes, after my visit</b><span class="wb-inv">.</span></a>
 						</li>
-						<li class="mrgn-tp-md"><a class="survey-close" id='owInviteCancel' href='javascript:void(0)' onclick='owInviteSnippet.style.display="none";'"><button id="survey-no" class="btn btn-default" style="text-decoration: none;"><b>No, thank you</b></a><span class="wb-inv">.</span></button></li>
+
+						<li class="mrgn-tp-md">
+							<a id='owInviteCancel' class="survey-close" href='javascript:void(0)' onclick='owInviteSnippet.style.display="none";'>
+								<button id="survey-no" class="btn btn-default" style="text-decoration: none;">
+							<b>No, thank you</b>
+
+						<span class="wb-inv">.</span></button>	</a></li>
 		</ul>
+
+
 	</div>
 	<button id="survey-close" class="mfp-close" title="Close: Website survey" style="color:white!important"><a id='owInviteCancel' href='javascript:void(0)' onclick='owInviteSnippet.style.display="none";'>×</a><span class="wb-inv"> Close: Website survey</span></button>
 	<input type="hidden" name="popupName" value="TBS - TSS - 2020-07-31">
 </div>
-    
+
 </aside>
 <script>var owOnload=function(){if(-1==document.cookie.indexOf('ow-intercept-quiz-k552c4ic')){var o=new XMLHttpRequest;o.onloadend=function(){try{var o=document.getElementById('owInviteSnippet');var date=new Date();date.setMonth(date.getMonth()+1);this.response&&JSON.parse(this.response).active===!0&&(document.cookie='ow-intercept-quiz-k552c4ic=Done;path=/;expires='+date.toUTCString()+';',setTimeout(function(){o.style.display='block',o.style.opacity=1},2e3))}catch(e){}},o.open('POST','https://app.optimalworkshop.com/survey_status/questions/k552c4ic/active'),o.send()}};if(window.addEventListener){window.addEventListener('load',function(){owOnload();});}else if(window.attachEvent){window.attachEvent('onload',function(){owOnload();});}</script>
 <!-- END COVID task survey -->
