@@ -167,8 +167,42 @@
 </div>
 
 </aside>
-<script>var owOnload=function(){if(-1==document.cookie.indexOf('ow-intercept-quiz-k552c4ic')){var o=new XMLHttpRequest;o.onloadend=function(){try{var o=document.getElementById('owInviteSnippet');var date=new Date();date.setMonth(date.getMonth()+1);this.response&&JSON.parse(this.response).active===!0&&(document.cookie='ow-intercept-quiz-k552c4ic=Done;path=/;expires='+date.toUTCString()+';',setTimeout(function(){o.style.display='block',o.style.opacity=1},2e3))}catch(e){}},o.open('POST','https://app.optimalworkshop.com/survey_status/questions/k552c4ic/active'),o.send()}};if(window.addEventListener){window.addEventListener('load',function(){owOnload();});}else if(window.attachEvent){window.attachEvent('onload',function(){owOnload();});}</script>
-<!-- END COVID task survey -->
+
+
+<script>
+    var owOnload = function() {
+        if (-1 == document.cookie.indexOf('ow-intercept-quiz-k552c4ic')) {
+            var d = Math.random();
+            if (d <= .20) {
+                var o = new XMLHttpRequest;
+                o.onloadend = function() {
+                    try {
+                        var o = document.getElementById('owInviteSnippet');
+                        var date = new Date();
+                        date.setMonth(date.getMonth() + 1);
+                        this.response && JSON.parse(this.response).active === !0 && (document.cookie = 'ow-intercept-quiz-k552c4ic=Done;path=/;expires=' + date.toUTCString() + ';', setTimeout(function() {
+                            o.style.display = 'block', o.style.opacity = 1
+                        }, 2e3))
+                    } catch (e) {}
+                }, o.open('POST', 'https://app.optimalworkshop.com/survey_status/questions/k552c4ic/active'), o.send()
+            }
+        }
+    };
+    if (window.addEventListener) {
+        window.addEventListener('load', function() {
+            owOnload();
+        });
+    } else if (window.attachEvent) {
+        window.attachEvent('onload', function() {
+            owOnload();
+        });
+    }
+</script>
+
+
+
+
+
 
 </body>
 </html>
